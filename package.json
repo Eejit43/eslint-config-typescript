@@ -1,5 +1,10 @@
 {
     "name": "@eejit/eslint-config-typescript",
     "version": "1.0.2",
-    "author": "Eejit43"
+    "peerDependencies": {
+        "@typescript-eslint/eslint-plugin": "latest",
+        "@typescript-eslint/parser": "latest",
+        "eslint-plugin-jsdoc": "latest",
+        "eslint": "latest"
+    }
 }
