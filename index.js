@@ -4,7 +4,8 @@ module.exports = {
         'plugin:@typescript-eslint/eslint-recommended',
         'plugin:@typescript-eslint/recommended-type-checked',
         'plugin:@typescript-eslint/stylistic-type-checked',
-        'plugin:jsdoc/recommended-typescript'
+        'plugin:jsdoc/recommended-typescript',
+        'plugin:unicorn/recommended'
     ],
     parser: '@typescript-eslint/parser',
     plugins: ['@typescript-eslint', 'jsdoc'],
