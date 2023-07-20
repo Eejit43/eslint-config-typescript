@@ -8,7 +8,7 @@ module.exports = {
         'plugin:unicorn/recommended'
     ],
     parser: '@typescript-eslint/parser',
-    plugins: ['@typescript-eslint', 'jsdoc'],
+    plugins: ['@typescript-eslint', 'jsdoc', 'unicorn'],
     root: true,
     rules: {
         '@typescript-eslint/ban-ts-comment': ['error', { 'ts-ignore': 'allow-with-description' }],
@@ -19,6 +19,7 @@ module.exports = {
         '@typescript-eslint/no-misused-promises': 'off',
         '@typescript-eslint/no-unnecessary-type-assertion': 'off',
         '@typescript-eslint/no-unused-expressions': 'error',
+        '@typescript-eslint/non-nullable-type-assertion-style': 'off',
         '@typescript-eslint/restrict-template-expressions': ['error', { allowNumber: true, allowBoolean: true }],
         curly: ['error', 'multi'],
         'default-case-last': 'error',
@@ -41,6 +42,7 @@ module.exports = {
         'object-shorthand': 'error',
         'prefer-arrow-callback': 'error',
         'prefer-destructuring': ['error', { array: false, object: true }, { enforceForRenamedProperties: false }],
+        'unicorn/no-null': 'off',
         yoda: 'error'
     }
 };
