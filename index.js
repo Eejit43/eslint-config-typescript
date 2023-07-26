@@ -21,6 +21,7 @@ module.exports = {
         '@typescript-eslint/no-unnecessary-type-assertion': 'off',
         '@typescript-eslint/no-unused-expressions': 'error',
         '@typescript-eslint/non-nullable-type-assertion-style': 'off',
+        '@typescript-eslint/quotes': ['error', 'single', { avoidEscape: true, allowTemplateLiterals: false }],
         '@typescript-eslint/restrict-template-expressions': ['error', { allowNumber: true, allowBoolean: true }],
 
         // JSDoc
