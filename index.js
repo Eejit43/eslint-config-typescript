@@ -32,7 +32,6 @@ module.exports = {
 
         // Unicorn
         'unicorn/no-await-expression-member': 'off',
-        'unicorn/no-empty-file': 'off', // Seems to be buggy
         'unicorn/no-null': 'off',
 
         // ESLint
