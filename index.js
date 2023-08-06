@@ -1,11 +1,11 @@
 module.exports = {
     extends: [
-        'eslint:recommended', //
+        'eslint:recommended',
         'plugin:@typescript-eslint/eslint-recommended',
         'plugin:@typescript-eslint/recommended-type-checked',
         'plugin:@typescript-eslint/stylistic-type-checked',
         'plugin:jsdoc/recommended-typescript',
-        'plugin:unicorn/recommended'
+        'plugin:unicorn/recommended',
     ],
     parser: '@typescript-eslint/parser',
     plugins: ['@typescript-eslint', 'jsdoc', 'unicorn'],
@@ -15,7 +15,13 @@ module.exports = {
         '@typescript-eslint/ban-ts-comment': ['error', { 'ts-ignore': 'allow-with-description' }],
         '@typescript-eslint/default-param-last': 'error',
         '@typescript-eslint/dot-notation': 'error',
-        '@typescript-eslint/naming-convention': ['error', { selector: ['default', 'variableLike', 'method'], format: ['strictCamelCase', 'UPPER_CASE'] }, { selector: ['default', 'variableLike', 'method'], format: null, filter: { regex: '^\\d+$', match: true } }, { selector: 'typeLike', format: ['StrictPascalCase'] }, { selector: 'memberLike', format: null, filter: { regex: '[-]', match: true } }],
+        '@typescript-eslint/naming-convention': [
+            'error',
+            { selector: ['default', 'variableLike', 'method'], format: ['strictCamelCase', 'UPPER_CASE'] },
+            { selector: ['default', 'variableLike', 'method'], format: null, filter: { regex: '^\\d+$', match: true } },
+            { selector: 'typeLike', format: ['StrictPascalCase'] },
+            { selector: 'memberLike', format: null, filter: { regex: '[-]', match: true } },
+        ],
         '@typescript-eslint/no-floating-promises': 'off',
         '@typescript-eslint/no-misused-promises': 'off',
         '@typescript-eslint/no-unnecessary-type-assertion': 'off',
@@ -44,7 +50,6 @@ module.exports = {
         'no-await-in-loop': 'error',
         'no-console': ['error', { allow: ['warn', 'error'] }],
         'no-lonely-if': 'error',
-        'no-return-await': 'error',
         'no-template-curly-in-string': 'error',
         'no-unneeded-ternary': 'error',
         'no-unused-expressions': 'off',
@@ -52,6 +57,6 @@ module.exports = {
         'object-shorthand': 'error',
         'prefer-arrow-callback': 'error',
         'prefer-destructuring': ['error', { array: false, object: true }, { enforceForRenamedProperties: false }],
-        yoda: 'error'
-    }
+        yoda: 'error',
+    },
 };
