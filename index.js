@@ -39,6 +39,7 @@ module.exports = {
 
         // Unicorn
         'unicorn/no-await-expression-member': 'off',
+        'unicorn/no-nested-ternary': 'off',
         'unicorn/no-null': 'off',
 
         // ESLint
