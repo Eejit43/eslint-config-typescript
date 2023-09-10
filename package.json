@@ -5,8 +5,8 @@
     "dependencies": {
         "@typescript-eslint/eslint-plugin": "^6.6.0",
         "@typescript-eslint/parser": "^6.6.0",
-        "eslint": "^8.48.0",
-        "eslint-plugin-jsdoc": "^46.5.1",
+        "eslint": "^8.49.0",
+        "eslint-plugin-jsdoc": "^46.6.0",
         "eslint-plugin-unicorn": "^48.0.1"
     },
     "devDependencies": {
