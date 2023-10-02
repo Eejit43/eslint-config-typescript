@@ -3,13 +3,13 @@
     "version": "2.19.1",
     "prettier": "@eejit/prettier-config",
     "dependencies": {
-        "@typescript-eslint/eslint-plugin": "^6.7.3",
-        "@typescript-eslint/parser": "^6.7.3",
+        "@typescript-eslint/eslint-plugin": "^6.7.4",
+        "@typescript-eslint/parser": "^6.7.4",
         "eslint": "^8.50.0",
         "eslint-plugin-jsdoc": "^46.8.2",
         "eslint-plugin-unicorn": "^48.0.1"
     },
     "devDependencies": {
-        "@eejit/prettier-config": "^2.0.3"
+        "@eejit/prettier-config": "^2.0.4"
     }
 }
