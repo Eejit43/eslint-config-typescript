@@ -1,6 +1,6 @@
 {
     "name": "@eejit/eslint-config-typescript",
-    "version": "2.19.1",
+    "version": "2.20.0",
     "prettier": "@eejit/prettier-config",
     "dependencies": {
         "@typescript-eslint/eslint-plugin": "^6.7.5",
