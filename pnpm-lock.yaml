@@ -23,8 +23,8 @@ dependencies:
 
 devDependencies:
   '@eejit/prettier-config':
-    specifier: ^2.0.4
-    version: 2.0.4(postcss@8.4.28)(typescript@5.1.6)
+    specifier: ^2.0.5
+    version: 2.0.5(postcss@8.4.28)(typescript@5.1.6)
 
 packages:
 
@@ -54,8 +54,8 @@ packages:
       js-tokens: 4.0.0
     dev: false
 
-  /@eejit/prettier-config@2.0.4(postcss@8.4.28)(typescript@5.1.6):
-    resolution: {integrity: sha512-O6K16ckksu0/HLueiRLRapotwVqbTr89AWCT8aMwXb9u2we4bkwawmOu7C/T08m++RSolEsTwzejwOitYfAcmA==}
+  /@eejit/prettier-config@2.0.5(postcss@8.4.28)(typescript@5.1.6):
+    resolution: {integrity: sha512-mChaYD7FFTQjSTBMMhOcsHzUnnBbVL5FUipyq6i8C0WZJXCLalkN+53F2sGd42wL0HBtTTTcIgvlM5jrJLTysw==}
     dependencies:
       prettier: 3.0.3
       prettier-plugin-css-order: 2.0.1(postcss@8.4.28)(prettier@3.0.3)
