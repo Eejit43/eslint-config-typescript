@@ -18,7 +18,7 @@ module.exports = {
         '@typescript-eslint/naming-convention': [
             'error',
             { selector: ['default', 'variableLike', 'method'], format: ['strictCamelCase', 'UPPER_CASE'] },
-            { selector: ['default', 'variableLike', 'method'], format: null, filter: { regex: '^\\d+$', match: true } },
+            { selector: ['default', 'variableLike', 'method'], format: null, filter: { regex: '^(\\d+|Querystring|Params)$', match: true } },
             { selector: 'typeLike', format: ['StrictPascalCase'] },
             { selector: 'memberLike', format: null, filter: { regex: '[-]', match: true } },
         ],
