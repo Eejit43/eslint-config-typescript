@@ -11,6 +11,6 @@
         "eslint-plugin-unicorn": "^49.0.0"
     },
     "devDependencies": {
-        "@eejit/prettier-config": "^2.1.0"
+        "@eejit/prettier-config": "^2.1.1"
     }
 }
