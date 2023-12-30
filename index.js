@@ -21,14 +21,17 @@ module.exports = {
             { selector: ['default', 'variableLike', 'method'], format: null, filter: { regex: '^(\\d+|Querystring|Params|Body)$', match: true } },
             { selector: 'typeLike', format: ['StrictPascalCase'] },
             { selector: 'memberLike', format: null, filter: { regex: '[-]', match: true } },
+            { selector: 'import', format: ['camelCase', 'PascalCase'] },
         ],
         '@typescript-eslint/no-floating-promises': 'off',
         '@typescript-eslint/no-misused-promises': 'off',
         '@typescript-eslint/no-unnecessary-type-assertion': 'off',
         '@typescript-eslint/no-unused-expressions': 'error',
         '@typescript-eslint/non-nullable-type-assertion-style': 'off',
-        '@typescript-eslint/quotes': ['error', 'single', { avoidEscape: true, allowTemplateLiterals: false }],
         '@typescript-eslint/restrict-template-expressions': ['error', { allowNumber: true, allowBoolean: true }],
+
+        // ESLint Stylistic (TS)
+        '@stylistic/ts/quotes': ['error', 'single', { avoidEscape: true, allowTemplateLiterals: false }],
 
         // JSDoc
         'jsdoc/check-indentation': 'warn',
