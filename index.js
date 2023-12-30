@@ -8,7 +8,7 @@ module.exports = {
         'plugin:unicorn/recommended',
     ],
     parser: '@typescript-eslint/parser',
-    plugins: ['@typescript-eslint', 'jsdoc', 'unicorn'],
+    plugins: ['@typescript-eslint', '@stylistic/ts', 'jsdoc', 'unicorn'],
     root: true,
     rules: {
         // TypeScript ESLint
