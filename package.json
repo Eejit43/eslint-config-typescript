@@ -5,13 +5,13 @@
     "prettier": "@eejit/prettier-config",
     "dependencies": {
         "@stylistic/eslint-plugin-ts": "^1.5.3",
-        "@typescript-eslint/eslint-plugin": "^6.18.0",
-        "@typescript-eslint/parser": "^6.18.0",
+        "@typescript-eslint/eslint-plugin": "^6.18.1",
+        "@typescript-eslint/parser": "^6.18.1",
         "eslint": "^8.56.0",
         "eslint-plugin-jsdoc": "^48.0.2",
         "eslint-plugin-unicorn": "^50.0.1"
     },
     "devDependencies": {
-        "@eejit/prettier-config": "^2.1.2"
+        "@eejit/prettier-config": "^2.2.0"
     }
 }
