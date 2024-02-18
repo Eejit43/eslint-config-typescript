@@ -1,6 +1,6 @@
 {
     "name": "@eejit/eslint-config-typescript",
-    "version": "7.0.0",
+    "version": "8.0.0",
     "repository": "github:Eejit43/eslint-config-typescript",
     "prettier": "@eejit/prettier-config",
     "dependencies": {
