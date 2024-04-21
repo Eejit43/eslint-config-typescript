@@ -1,15 +1,15 @@
 {
     "name": "@eejit/eslint-config-typescript",
-    "version": "9.0.0",
+    "version": "9.1.0",
     "repository": "github:Eejit43/eslint-config-typescript",
     "prettier": "@eejit/prettier-config",
     "dependencies": {
+        "@eslint/js": "^9.1.1",
         "@stylistic/eslint-plugin-ts": "^1.7.2",
-        "@typescript-eslint/eslint-plugin": "^7.7.0",
-        "@typescript-eslint/parser": "^7.7.0",
         "eslint": "^9.1.0",
         "eslint-plugin-jsdoc": "^48.2.3",
-        "eslint-plugin-unicorn": "^52.0.0"
+        "eslint-plugin-unicorn": "^52.0.0",
+        "typescript-eslint": "^7.7.0"
     },
     "devDependencies": {
         "@eejit/prettier-config": "^2.2.3"
