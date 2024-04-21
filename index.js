@@ -14,9 +14,9 @@ export default [
         rules: {
             // Config extensions
             ...eslint.configs.recommended.rules,
-            ...typescriptEslint.configs.eslintRecommended,
-            ...typescriptEslint.configs.recommendedTypeChecked,
-            ...typescriptEslint.configs.stylisticTypeChecked,
+            ...typescriptEslint.configs.eslintRecommended.rules,
+            ...typescriptEslint.configs.recommendedTypeChecked.rules,
+            ...typescriptEslint.configs.stylisticTypeChecked.rules,
             ...jsdoc.configs['flat/recommended'].rules,
             ...unicorn.configs['flat/recommended'].rules,
 

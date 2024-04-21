@@ -1,7 +1,9 @@
 {
     "name": "@eejit/eslint-config-typescript",
-    "version": "9.1.0",
+    "version": "9.3.0",
     "repository": "github:Eejit43/eslint-config-typescript",
+    "type": "module",
+    "main": "index.js",
     "prettier": "@eejit/prettier-config",
     "dependencies": {
         "@eslint/js": "^9.1.1",
