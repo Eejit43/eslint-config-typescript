@@ -7,18 +7,16 @@ import unicorn from 'eslint-plugin-unicorn';
 import typescriptEslint from 'typescript-eslint';
 
 /** @type {import('eslint').Linter.FlatConfig[]} */
+// @ts-ignore
 export default [
     eslint.configs.recommended,
     ...typescriptEslint.configs.recommended,
     ...typescriptEslint.configs.recommendedTypeChecked,
     ...typescriptEslint.configs.stylisticTypeChecked,
+    jsdoc.configs['flat/recommended-typescript'],
     {
         plugins: { '@stylistic/ts': stylisticTypescript, jsdoc, unicorn },
         rules: {
-            // Config extensions
-            ...jsdoc.configs['flat/recommended'].rules,
-            ...unicorn.configs['flat/recommended'].rules,
-
             // TypeScript ESLint
             '@typescript-eslint/ban-ts-comment': ['error', { 'ts-ignore': 'allow-with-description' }],
             '@typescript-eslint/default-param-last': 'error',
@@ -49,6 +47,8 @@ export default [
             'jsdoc/require-returns': 'off',
 
             // Unicorn
+            ...unicorn.configs['flat/recommended'].rules,
+
             'unicorn/no-await-expression-member': 'off',
             'unicorn/no-nested-ternary': 'off',
             'unicorn/no-null': 'off',
