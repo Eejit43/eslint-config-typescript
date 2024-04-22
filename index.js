@@ -8,15 +8,14 @@ import typescriptEslint from 'typescript-eslint';
 
 /** @type {import('eslint').Linter.FlatConfig[]} */
 export default [
+    eslint.configs.recommended,
+    ...typescriptEslint.configs.recommended,
+    ...typescriptEslint.configs.recommendedTypeChecked,
+    ...typescriptEslint.configs.stylisticTypeChecked,
     {
-        languageOptions: { ecmaVersion: 'latest', parser: typescriptEslint.parser },
-        plugins: { '@typescript-eslint': typescriptEslint.plugin, '@stylistic/ts': stylisticTypescript, jsdoc, unicorn },
+        plugins: { '@stylistic/ts': stylisticTypescript, jsdoc, unicorn },
         rules: {
             // Config extensions
-            ...eslint.configs.recommended.rules,
-            ...typescriptEslint.configs.eslintRecommended.rules,
-            ...typescriptEslint.configs.recommendedTypeChecked.rules,
-            ...typescriptEslint.configs.stylisticTypeChecked.rules,
             ...jsdoc.configs['flat/recommended'].rules,
             ...unicorn.configs['flat/recommended'].rules,
 
