@@ -52,6 +52,7 @@ export default [
             'unicorn/no-await-expression-member': 'off',
             'unicorn/no-nested-ternary': 'off',
             'unicorn/no-null': 'off',
+            'unicorn/prefer-string-raw': 'off',
 
             // ESLint
             curly: ['error', 'multi'],
