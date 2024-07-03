@@ -1,0 +1,10 @@
+{
+    "compilerOptions": {
+        "lib": ["ESNext", "DOM"],
+        "target": "ESNext",
+        "module": "ESNext",
+
+        "strict": true,
+        "skipLibCheck": true
+    }
+}
