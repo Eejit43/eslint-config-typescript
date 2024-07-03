@@ -5,6 +5,8 @@
         "module": "ESNext",
         "types": ["bun-types"],
 
+        "moduleResolution": "NodeNext",
+
         "strict": true,
         "skipLibCheck": true
     }
