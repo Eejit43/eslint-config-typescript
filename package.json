@@ -15,6 +15,5 @@
     },
     "devDependencies": {
         "@eejit/prettier-config": "^3.0.0"
-    },
-    "packageManager": "pnpm@9.9.0"
+    }
 }
