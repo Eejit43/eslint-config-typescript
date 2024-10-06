@@ -53,6 +53,7 @@ export default [
             'unicorn/no-nested-ternary': 'off',
             'unicorn/no-null': 'off',
             'unicorn/prefer-string-raw': 'off',
+            'unicorn/better-regex': 'error',
 
             // ESLint
             curly: ['error', 'multi'],
