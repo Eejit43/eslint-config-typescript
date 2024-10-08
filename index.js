@@ -6,7 +6,7 @@ import jsdoc from 'eslint-plugin-jsdoc';
 import unicorn from 'eslint-plugin-unicorn';
 import typescriptEslint from 'typescript-eslint';
 
-/** @type {import('eslint').Linter.FlatConfig[]} */
+/** @type {import('eslint').Linter.Config[]} */
 // @ts-ignore
 export default [
     eslint.configs.recommended,
@@ -24,7 +24,11 @@ export default [
             '@typescript-eslint/naming-convention': [
                 'error',
                 { selector: ['default', 'variableLike', 'method'], format: ['strictCamelCase', 'UPPER_CASE'] },
-                { selector: ['default', 'variableLike', 'method'], format: null, filter: { regex: '^(\\d+|Querystring|Params|Body)$', match: true } },
+                {
+                    selector: ['default', 'variableLike', 'method'],
+                    format: null,
+                    filter: { regex: '^(\\d+|Querystring|Params|Body)$', match: true },
+                },
                 { selector: 'typeLike', format: ['StrictPascalCase'] },
                 { selector: 'memberLike', format: null, filter: { regex: '[-]', match: true } },
                 { selector: 'import', format: ['camelCase', 'PascalCase'] },
@@ -57,11 +61,11 @@ export default [
             'unicorn/prefer-string-raw': 'off',
 
             // ESLint
-            curly: ['error', 'multi'],
+            'curly': ['error', 'multi'],
             'default-case-last': 'error',
             'default-param-last': 'off',
             'dot-notation': 'off',
-            eqeqeq: ['error', 'always'],
+            'eqeqeq': ['error', 'always'],
             'no-await-in-loop': 'error',
             'no-console': ['error', { allow: ['warn', 'error'] }],
             'no-lonely-if': 'error',
@@ -72,7 +76,7 @@ export default [
             'object-shorthand': 'error',
             'prefer-arrow-callback': 'error',
             'prefer-destructuring': ['error', { array: false, object: true }, { enforceForRenamedProperties: false }],
-            yoda: 'error',
+            'yoda': 'error',
         },
     },
 ];
