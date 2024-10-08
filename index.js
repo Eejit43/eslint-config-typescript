@@ -49,11 +49,12 @@ export default [
             // Unicorn
             ...unicorn.configs['flat/recommended'].rules,
 
+            'unicorn/better-regex': 'error',
             'unicorn/no-await-expression-member': 'off',
             'unicorn/no-nested-ternary': 'off',
             'unicorn/no-null': 'off',
+            'unicorn/prefer-global-this': 'off',
             'unicorn/prefer-string-raw': 'off',
-            'unicorn/better-regex': 'error',
 
             // ESLint
             curly: ['error', 'multi'],
