@@ -1,6 +1,6 @@
 {
     "name": "@eejit/eslint-config-typescript",
-    "version": "13.3.1",
+    "version": "13.4.0",
     "repository": "github:Eejit43/eslint-config-typescript",
     "type": "module",
     "main": "index.js",

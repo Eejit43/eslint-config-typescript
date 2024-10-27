@@ -19,6 +19,8 @@ export default [
         rules: {
             // TypeScript ESLint
             '@typescript-eslint/ban-ts-comment': ['error', { 'ts-ignore': 'allow-with-description' }],
+            '@typescript-eslint/consistent-type-exports': 'error',
+            '@typescript-eslint/consistent-type-imports': 'error',
             '@typescript-eslint/default-param-last': 'error',
             '@typescript-eslint/dot-notation': 'error',
             '@typescript-eslint/naming-convention': [
