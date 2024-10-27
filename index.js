@@ -36,10 +36,9 @@ export default [
                 { selector: 'import', format: ['camelCase', 'PascalCase'] },
             ],
             '@typescript-eslint/no-floating-promises': 'off',
+            '@typescript-eslint/no-import-type-side-effects': 'error',
             '@typescript-eslint/no-misused-promises': 'off',
-            '@typescript-eslint/no-unnecessary-type-assertion': 'off',
             '@typescript-eslint/no-unused-expressions': 'error',
-            '@typescript-eslint/non-nullable-type-assertion-style': 'off',
             '@typescript-eslint/restrict-template-expressions': ['error', { allowNumber: true, allowBoolean: true }],
 
             // ESLint Stylistic (TS)
