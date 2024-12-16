@@ -31,7 +31,7 @@ export default [
                     format: null,
                     filter: { regex: '^(\\d+|Querystring|Params|Body)$', match: true },
                 },
-                { selector: 'typeLike', format: ['StrictPascalCase'] },
+                { selector: ['typeLike', 'enumMember'], format: ['StrictPascalCase'] },
                 { selector: 'memberLike', format: null, filter: { regex: '[-]', match: true } },
                 { selector: 'import', format: ['camelCase', 'PascalCase'] },
             ],
