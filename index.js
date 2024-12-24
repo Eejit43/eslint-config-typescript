@@ -35,6 +35,7 @@ export default typescriptEslint.config(
             '@typescript-eslint/no-non-null-assertion': 'off',
             '@typescript-eslint/no-unnecessary-condition': ['error', { allowConstantLoopConditions: true }],
             '@typescript-eslint/restrict-template-expressions': ['error', { allowNumber: true, allowBoolean: true }],
+            '@typescript-eslint/no-misused-promises': ['error', { checksVoidReturn: { arguments: false } }],
 
             // ESLint Stylistic (TS)
             '@stylistic/ts/quotes': ['error', 'single', { avoidEscape: true, allowTemplateLiterals: false }],
