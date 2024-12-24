@@ -32,10 +32,11 @@ export default typescriptEslint.config(
                 { selector: 'import', format: ['camelCase', 'PascalCase'] },
             ],
             '@typescript-eslint/no-import-type-side-effects': 'error',
+            '@typescript-eslint/no-misused-promises': ['error', { checksVoidReturn: { arguments: false } }],
             '@typescript-eslint/no-non-null-assertion': 'off',
             '@typescript-eslint/no-unnecessary-condition': ['error', { allowConstantLoopConditions: true }],
             '@typescript-eslint/restrict-template-expressions': ['error', { allowNumber: true, allowBoolean: true }],
-            '@typescript-eslint/no-misused-promises': ['error', { checksVoidReturn: { arguments: false } }],
+            '@typescript-eslint/use-unknown-in-catch-callback-variable': 'off',
 
             // ESLint Stylistic (TS)
             '@stylistic/ts/quotes': ['error', 'single', { avoidEscape: true, allowTemplateLiterals: false }],
