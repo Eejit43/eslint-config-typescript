@@ -12,7 +12,7 @@ export default typescriptEslint.config(
     typescriptEslint.configs.stylisticTypeChecked,
     jsdoc.configs['flat/recommended-typescript'],
     jsdoc.configs['flat/stylistic-typescript'],
-    unicorn.configs['flat/recommended'],
+    unicorn.configs['recommended'],
     {
         plugins: { '@stylistic/ts': stylisticTypescript, jsdoc },
         rules: {
