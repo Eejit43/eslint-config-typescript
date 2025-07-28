@@ -6,12 +6,12 @@
     "main": "index.js",
     "prettier": "@eejit/prettier-config",
     "dependencies": {
-        "@eslint/js": "^9.31.0",
+        "@eslint/js": "^9.32.0",
         "@stylistic/eslint-plugin-ts": "^4.4.1",
-        "eslint": "^9.31.0",
+        "eslint": "^9.32.0",
         "eslint-plugin-jsdoc": "^51.4.1",
-        "eslint-plugin-unicorn": "^59.0.1",
-        "typescript-eslint": "^8.37.0"
+        "eslint-plugin-unicorn": "^60.0.0",
+        "typescript-eslint": "^8.38.0"
     },
     "devDependencies": {
         "@eejit/prettier-config": "^3.5.0"
