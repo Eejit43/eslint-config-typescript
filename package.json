@@ -11,7 +11,7 @@
         "eslint": "^9.34.0",
         "eslint-plugin-jsdoc": "^54.1.1",
         "eslint-plugin-unicorn": "^60.0.0",
-        "typescript-eslint": "^8.40.0"
+        "typescript-eslint": "^8.41.0"
     },
     "devDependencies": {
         "@eejit/prettier-config": "^3.5.0"
