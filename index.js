@@ -1,7 +1,7 @@
 // @ts-check
 
 import eslint from '@eslint/js';
-import stylisticTypescript from '@stylistic/eslint-plugin-ts';
+import stylistic from '@stylistic/eslint-plugin';
 import jsdoc from 'eslint-plugin-jsdoc';
 import unicorn from 'eslint-plugin-unicorn';
 import { defineConfig } from 'eslint/config';
@@ -15,7 +15,7 @@ export default defineConfig(
     jsdoc.configs['flat/stylistic-typescript'],
     unicorn.configs['recommended'],
     {
-        plugins: { '@stylistic/ts': stylisticTypescript, jsdoc },
+        plugins: { '@stylistic': stylistic, jsdoc },
         rules: {
             // TypeScript ESLint
             '@typescript-eslint/consistent-type-exports': ['error', { fixMixedExportsWithInlineTypeSpecifier: true }],
@@ -40,7 +40,7 @@ export default defineConfig(
             '@typescript-eslint/use-unknown-in-catch-callback-variable': 'off',
 
             // ESLint Stylistic (TS)
-            '@stylistic/ts/quotes': ['error', 'single', { avoidEscape: true, allowTemplateLiterals: false }],
+            '@stylistic/quotes': ['error', 'single', { avoidEscape: true, allowTemplateLiterals: false }],
 
             // JSDoc
             'jsdoc/check-indentation': 'warn',
