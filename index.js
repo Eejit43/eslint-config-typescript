@@ -2,7 +2,7 @@
 
 import eslint from '@eslint/js';
 import stylistic from '@stylistic/eslint-plugin';
-import jsdoc from 'eslint-plugin-jsdoc';
+import { jsdoc } from 'eslint-plugin-jsdoc';
 import unicorn from 'eslint-plugin-unicorn';
 import { defineConfig } from 'eslint/config';
 import typescriptEslint from 'typescript-eslint';
@@ -11,11 +11,19 @@ export default defineConfig(
     eslint.configs.recommended,
     typescriptEslint.configs.strictTypeChecked,
     typescriptEslint.configs.stylisticTypeChecked,
-    jsdoc.configs['flat/recommended-typescript'],
-    jsdoc.configs['flat/stylistic-typescript'],
     unicorn.configs['recommended'],
+    jsdoc({
+        config: 'flat/recommended-typescript',
+        rules: {
+            'jsdoc/check-indentation': 'warn',
+            'jsdoc/require-description-complete-sentence': 'warn',
+            'jsdoc/require-description': 'warn',
+            'jsdoc/require-returns': 'off',
+        },
+    }),
+    jsdoc({ config: 'flat/stylistic-typescript' }),
     {
-        plugins: { '@stylistic': stylistic, jsdoc },
+        plugins: { '@stylistic': stylistic },
         rules: {
             // TypeScript ESLint
             '@typescript-eslint/consistent-type-exports': ['error', { fixMixedExportsWithInlineTypeSpecifier: true }],
@@ -41,12 +49,6 @@ export default defineConfig(
 
             // ESLint Stylistic (TS)
             '@stylistic/quotes': ['error', 'single', { avoidEscape: true, allowTemplateLiterals: false }],
-
-            // JSDoc
-            'jsdoc/check-indentation': 'warn',
-            'jsdoc/require-description-complete-sentence': 'warn',
-            'jsdoc/require-description': 'warn',
-            'jsdoc/require-returns': 'off',
 
             // Unicorn
             'unicorn/better-regex': 'error',
