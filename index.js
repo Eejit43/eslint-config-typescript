@@ -48,7 +48,7 @@ export default defineConfig(
             '@typescript-eslint/use-unknown-in-catch-callback-variable': 'off',
 
             // ESLint Stylistic (TS)
-            '@stylistic/quotes': ['error', 'single', { avoidEscape: true, allowTemplateLiterals: false }],
+            '@stylistic/quotes': ['error', 'single', { avoidEscape: true, allowTemplateLiterals: 'avoidEscape' }],
 
             // Unicorn
             'unicorn/better-regex': 'error',
