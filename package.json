@@ -9,11 +9,11 @@
         "@eslint/js": "^9.39.1",
         "@stylistic/eslint-plugin": "^5.6.1",
         "eslint": "^9.39.1",
-        "eslint-plugin-jsdoc": "^61.4.1",
+        "eslint-plugin-jsdoc": "^61.5.0",
         "eslint-plugin-unicorn": "^62.0.0",
-        "typescript-eslint": "^8.48.0"
+        "typescript-eslint": "^8.48.1"
     },
     "devDependencies": {
-        "@eejit/prettier-config": "^3.5.0"
+        "@eejit/prettier-config": "^3.6.1"
     }
 }
