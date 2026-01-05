@@ -1,7 +1,10 @@
 {
     "name": "@eejit/eslint-config-typescript",
     "version": "16.0.1",
-    "repository": "github:Eejit43/eslint-config-typescript",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Eejit43/eslint-config-typescript.git"
+    },
     "type": "module",
     "main": "index.js",
     "prettier": "@eejit/prettier-config",
