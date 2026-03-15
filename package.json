@@ -1,12 +1,13 @@
 {
     "name": "@eejit/eslint-config-typescript",
-    "version": "17.0.0",
+    "version": "17.0.1",
     "repository": {
         "type": "git",
         "url": "git+https://github.com/Eejit43/eslint-config-typescript.git"
     },
     "type": "module",
     "main": "index.js",
+    "types": "index.d.ts",
     "prettier": "@eejit/prettier-config",
     "dependencies": {
         "@eslint/js": "^10.0.1",

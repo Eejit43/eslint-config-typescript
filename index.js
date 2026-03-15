@@ -4,10 +4,11 @@ import eslint from '@eslint/js';
 import stylistic from '@stylistic/eslint-plugin';
 import { jsdoc } from 'eslint-plugin-jsdoc';
 import unicorn from 'eslint-plugin-unicorn';
-import { defineConfig } from 'eslint/config';
+import { defineConfig, globalIgnores } from 'eslint/config';
 import typescriptEslint from 'typescript-eslint';
 
 export default defineConfig(
+    globalIgnores(['eslint.config.js']),
     eslint.configs.recommended,
     typescriptEslint.configs.strictTypeChecked,
     typescriptEslint.configs.stylisticTypeChecked,
