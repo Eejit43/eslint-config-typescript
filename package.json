@@ -1,6 +1,6 @@
 {
     "name": "@eejit/eslint-config-typescript",
-    "version": "18.0.0",
+    "version": "18.1.0",
     "repository": {
         "type": "git",
         "url": "git+https://github.com/Eejit43/eslint-config-typescript.git"
