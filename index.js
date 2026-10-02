@@ -1,9 +1,10 @@
 // @ts-check
 
 import eslint from '@eslint/js';
-import stylistic from '@stylistic/eslint-plugin';
-import { jsdoc } from 'eslint-plugin-jsdoc';
-import unicorn from 'eslint-plugin-unicorn';
+import stylisticPlugin from '@stylistic/eslint-plugin';
+import { jsdoc as jsdocPlugin } from 'eslint-plugin-jsdoc';
+import regexpPlugin from 'eslint-plugin-regexp';
+import unicornPlugin from 'eslint-plugin-unicorn';
 import { defineConfig, globalIgnores } from 'eslint/config';
 import typescriptEslint from 'typescript-eslint';
 
@@ -12,8 +13,9 @@ export default defineConfig(
     eslint.configs.recommended,
     typescriptEslint.configs.strictTypeChecked,
     typescriptEslint.configs.stylisticTypeChecked,
-    unicorn.configs['recommended'],
-    jsdoc({
+    regexpPlugin.configs.recommended,
+    unicornPlugin.configs.recommended,
+    jsdocPlugin({
         config: 'flat/recommended-typescript',
         rules: {
             'jsdoc/check-indentation': 'warn',
@@ -22,9 +24,9 @@ export default defineConfig(
             'jsdoc/require-returns': 'off',
         },
     }),
-    jsdoc({ config: 'flat/stylistic-typescript' }),
+    jsdocPlugin({ config: 'flat/stylistic-typescript' }),
     {
-        plugins: { '@stylistic': stylistic },
+        plugins: { '@stylistic': stylisticPlugin },
         rules: {
             // TypeScript ESLint
             '@typescript-eslint/consistent-type-exports': ['error', { fixMixedExportsWithInlineTypeSpecifier: true }],
@@ -52,7 +54,6 @@ export default defineConfig(
             '@stylistic/quotes': ['error', 'single', { avoidEscape: true, allowTemplateLiterals: 'avoidEscape' }],
 
             // Unicorn
-            'unicorn/better-regex': 'error',
             'unicorn/no-await-expression-member': 'off',
             'unicorn/no-nested-ternary': 'off',
             'unicorn/no-null': 'off',
