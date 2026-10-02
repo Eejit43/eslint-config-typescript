@@ -54,12 +54,16 @@ export default defineConfig(
             '@stylistic/quotes': ['error', 'single', { avoidEscape: true, allowTemplateLiterals: 'avoidEscape' }],
 
             // Unicorn
+            'unicorn/max-nested-calls': 'off',
             'unicorn/no-await-expression-member': 'off',
+            'unicorn/no-computed-property-existence-check': 'off',
             'unicorn/no-nested-ternary': 'off',
             'unicorn/no-null': 'off',
             'unicorn/number-literal-case': ['error', { hexadecimalValue: 'lowercase' }],
             'unicorn/numeric-separators-style': ['error', { hexadecimal: { minimumDigits: 0, groupLength: 6 } }],
             'unicorn/prefer-global-this': 'off',
+            'unicorn/prefer-number-coercion': 'off',
+            'unicorn/prefer-split-limit': 'off',
             'unicorn/prefer-string-raw': 'off',
 
             // ESLint
