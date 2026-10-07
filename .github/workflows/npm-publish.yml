@@ -12,5 +12,6 @@ jobs:
             - uses: pnpm/setup@v3
               with:
                   version: 12
+                  install: false
             - run: git status
             - run: pnpm publish
