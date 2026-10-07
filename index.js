@@ -65,6 +65,7 @@ export default defineConfig(
             'unicorn/prefer-number-coercion': 'off',
             'unicorn/prefer-split-limit': 'off',
             'unicorn/prefer-string-raw': 'off',
+            'unicorn/single-line-block-comment-style': 'off',
 
             // ESLint
             'curly': ['error', 'multi'],
