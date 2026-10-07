@@ -13,4 +13,4 @@ jobs:
               with:
                   version: 12
                   install: false
-            - run: pnpm publish
+            - run: pnpm publish --provenance
