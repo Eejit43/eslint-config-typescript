@@ -13,4 +13,4 @@ jobs:
               with:
                   version: 12
                   install: false
-            - run: pnpm publish --provenance --recursive # Publish recursively to not fail if version already published
+            - run: pnpm publish --recursive # "recursive" flag prevents trying to republish already-published version

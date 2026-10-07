@@ -28,6 +28,63 @@ export default defineConfig(
     {
         plugins: { '@stylistic': stylisticPlugin },
         rules: {
+            // RegExp plugin
+            'regexp/no-super-linear-backtracking': 'off',
+
+            // Stylistic plugin
+            '@stylistic/quotes': ['error', 'single', { avoidEscape: true, allowTemplateLiterals: 'avoidEscape' }],
+
+            // Unicorn plugin
+            'unicorn/consistent-boolean-name': [
+                'error',
+                {
+                    prefixes: {
+                        is: true,
+                        are: true,
+                        has: true,
+                        have: true,
+                        can: true,
+                        should: true,
+                        was: true,
+                        were: true,
+                        did: true,
+                        does: true,
+                        will: true,
+                        requires: true,
+                    },
+                },
+            ],
+            'unicorn/consistent-class-member-order': [
+                'error',
+                {
+                    order: [
+                        'static-field',
+                        'static-block',
+                        'static-method',
+                        'public-field',
+                        'private-field',
+                        'constructor',
+                        'public-method',
+                        'private-method',
+                    ],
+                },
+            ],
+            'unicorn/max-nested-calls': 'off',
+            'unicorn/no-asterisk-prefix-in-documentation-comments': 'off',
+            'unicorn/no-await-expression-member': 'off',
+            'unicorn/no-computed-property-existence-check': 'off',
+            'unicorn/no-nested-ternary': 'off',
+            'unicorn/no-null': 'off',
+            'unicorn/no-unsafe-string-replacement': 'off',
+            'unicorn/number-literal-case': ['error', { hexadecimalValue: 'lowercase' }],
+            'unicorn/numeric-separators-style': ['error', { hexadecimal: { minimumDigits: 0, groupLength: 6 } }],
+            'unicorn/prefer-dom-node-html-methods': 'off',
+            'unicorn/prefer-global-this': 'off',
+            'unicorn/prefer-number-coercion': 'off',
+            'unicorn/prefer-split-limit': 'off',
+            'unicorn/prefer-string-raw': 'off',
+            'unicorn/single-line-block-comment-style': 'off',
+
             // TypeScript ESLint
             '@typescript-eslint/consistent-type-exports': ['error', { fixMixedExportsWithInlineTypeSpecifier: true }],
             '@typescript-eslint/consistent-type-imports': ['error', { fixStyle: 'inline-type-imports' }],
@@ -49,23 +106,6 @@ export default defineConfig(
             '@typescript-eslint/no-unnecessary-condition': ['error', { allowConstantLoopConditions: true }],
             '@typescript-eslint/restrict-template-expressions': ['error', { allowNumber: true, allowBoolean: true }],
             '@typescript-eslint/use-unknown-in-catch-callback-variable': 'off',
-
-            // ESLint Stylistic (TS)
-            '@stylistic/quotes': ['error', 'single', { avoidEscape: true, allowTemplateLiterals: 'avoidEscape' }],
-
-            // Unicorn
-            'unicorn/max-nested-calls': 'off',
-            'unicorn/no-await-expression-member': 'off',
-            'unicorn/no-computed-property-existence-check': 'off',
-            'unicorn/no-nested-ternary': 'off',
-            'unicorn/no-null': 'off',
-            'unicorn/number-literal-case': ['error', { hexadecimalValue: 'lowercase' }],
-            'unicorn/numeric-separators-style': ['error', { hexadecimal: { minimumDigits: 0, groupLength: 6 } }],
-            'unicorn/prefer-global-this': 'off',
-            'unicorn/prefer-number-coercion': 'off',
-            'unicorn/prefer-split-limit': 'off',
-            'unicorn/prefer-string-raw': 'off',
-            'unicorn/single-line-block-comment-style': 'off',
 
             // ESLint
             'curly': ['error', 'multi'],
