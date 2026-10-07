@@ -13,5 +13,4 @@ jobs:
               with:
                   version: 12
                   install: false
-            - run: git status
             - run: pnpm publish
