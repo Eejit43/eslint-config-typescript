@@ -10,4 +10,6 @@ jobs:
         steps:
             - uses: actions/checkout@v7
             - uses: pnpm/setup@v3
+              with:
+                  version: 12
             - run: pnpm publish
